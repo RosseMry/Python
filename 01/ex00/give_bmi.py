@@ -8,9 +8,9 @@ def give_bmi(height: list[int | float], weight: list[int | float]) -> list[int |
 
     for h, w in zip(height, weight):
         if not isinstance(h, (int, float)) or isinstance(h, bool):
-            raise TypeError(f"The height '{h}'  is not a valid number.\n")
+            raise TypeError(f"The height {h}  is not a valid number.\n")
         if not isinstance(w, (int,float)) or isinstance(w, bool):
-            raise TypeError(f"The weight '{w}' is not a valid number.\n")
+            raise TypeError(f"The weight {w} is not a valid number.\n")
 
     #list comprehesion
     bmi : list[int | float]
