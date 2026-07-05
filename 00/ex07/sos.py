@@ -18,7 +18,7 @@ def main():
         txt = sys.argv[1]
 
         for character in txt:
-            if not character.isalnum() and character != " ":
+            if not character.isalnum() and character != " " :
                 raise AssertionError ("the arguments are bad")
 
         txt_upper = txt.upper()
