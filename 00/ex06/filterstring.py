@@ -2,14 +2,29 @@ import sys
 from ft_filter import ft_filter
 
 def main() :
-    if len(sys.argv) > 3 :
-        print("AssertionError: more than one argument is provided")
-        sys.exit()
-    elif len(sys.argv) < 3:
-        print("AssertionError: the arguments are bad")
-        sys.exit()
-    else
-        ft_filter(sys.argv[1], sys.argv[2])
+    try:
+        if len(sys.argv) != 3:
+            raise AssertionError ("the arguments are bad")
+        
+        texte = sys.argv[1]
+
+        #The second argument should be an int
+        try:
+            n = int(sys.argv[2])
+        except ValueError:
+            raise AssertionError("the arguments are bad")
+
+        #Do separation of text in words
+        words = texte.split()
+
+        #create lamdba funciton and apli ft_filter
+        result = ft_filter(lambda word: len(word) > n, words)
+
+        print(list(result)) #format the result in a list
+        
+    except AssertionError as msg: 
+        print(f"AssertionError: {msg}")
+        
 
 
 if __name__ == "__main__" :
