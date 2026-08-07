@@ -1,0 +1,27 @@
+print("\n====== TUPLE =======\n")
+tuple1 = ()
+print('1. Empty tuple', tuple1)
+tuple1 = ('Juanita', 'Maria', 'Sancho', 'Pedro', 'Juanjo')
+print('2. Print Tuple', tuple1)
+bro = ('Jota1', 'Jota2')
+family = bro + tuple1
+print('3. Join lists', family)
+print('4. Count of tuple', len(tuple1))
+list_family = list(tuple1)
+list_family.append('Rosario')
+list_family.append('Rogelio')
+family_members = tuple(list_family)
+print('5. To modify convert list after tuple again:', list_family, family_members)
+
+print("\n====== Exercises: Level 2 =======\n")
+fruits = ('Apple', "Banana")
+vegetables = ('Carrot', 'Celeri')
+animals = ('Guekko', 'Tucan')
+food_stuff_tp = fruits + vegetables + animals
+print('2. Group of tuples', food_stuff_tp)
+food_stuff_list = list(food_stuff_tp)
+print('5. Slicing a tuple :', food_stuff_tp[0:(len(food_stuff_tp)//2)] )
+print('6. Slicing the list copy:', food_stuff_list[0:3], "las items ", food_stuff_list[-3::])
+del food_stuff_tp
+nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+print('7. is estonia nordic ?', 'Estonia' in nordic_countries, 'is iceland nordic ? ' ,'Iceland' in nordic_countries)
