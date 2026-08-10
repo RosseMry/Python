@@ -1,5 +1,5 @@
 print("\n====== CONDITIONALS =======\n")
-'''age = int(input('Enter your age : '))
+age = int(input('Enter your age : '))
 
 if age < 18 :
     print(f'You need {18 - age} more years to learn to drive.')
@@ -53,7 +53,7 @@ elif month in Spring :
 elif month in Summer :
     print('The season is Summer')
 else :
-    print('Invalid Month')'''
+    print('Invalid Month')
 
 fruits = ['banana', 'orange', 'mango', 'lemon']
 fruit = str(input('Insert your fruit :')).lower()
@@ -63,3 +63,38 @@ if (fruit in fruits) != 1 :
     print('New list :', fruits)
 else:
     print('Fruit already in the list ')
+
+person={
+'first_name': 'Asabeneh',
+'last_name': 'Yetayeh',
+'age': 250,
+'country': 'Finland',
+'is_married': True,
+'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+'address': {
+    'street': 'Space street',
+    'zipcode': '02210'
+}
+}
+
+
+if person['skills'] :
+    print('The middle skill is :', person['skills'][len(person['skills']) // 2])
+else: 
+    print('Dont have skills like key')
+
+if person['skills']:
+    print('2. Have python like skill ? ', 'Python' in person['skills'])
+
+skills2 = set(person['skills'])
+if skills2 == {'JavaScript', 'React'}:
+    print('He is a front end developer')
+elif {'Node', 'Python', 'MongoDB'} <= skills2:
+    print('He is a backend developer')
+elif {'React', 'Node', 'MongoDB'} <= skills2:
+    print('He is a fullstack developer')
+else:
+    print('unknown title')
+
+if person['is_married'] == True and person['country'] == 'Finland' :
+    print(f'{person['first_name']} {person['last_name']} lives in {person["country"]}. He is married')
