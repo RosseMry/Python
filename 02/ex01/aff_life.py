@@ -42,6 +42,7 @@ def plot_country_evolution(df: pd.DataFrame, country_name: str):
     
     # Desplegar la ventana gráfica
     plt.show()
+    plt.savefig("???.png")
 
 # === PRUEBA DE EJECUCIÓN ===
 if __name__ == "__main__":

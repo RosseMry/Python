@@ -43,6 +43,7 @@ def process_and_zoom_image(file_path: str):
         plt.xlabel("X Axis (Pixels)")
         plt.ylabel("Y Axis (Pixels)")
         plt.show()
+        plt.savefig("zoom_img.png")
 
     except FileNotFoundError:
         print(f"Error: The file '{file_path}' was not found. Please verify the file path.", file=sys.stderr)
@@ -54,4 +55,4 @@ def process_and_zoom_image(file_path: str):
 # === Execution ===
 if __name__ == "__main__":
     # The prompt explicitly asks for "animal.jpeg"
-    process_and_zoom_image("/workspaces/Python/01/ex02/IMG_0311.jpeg")
+    process_and_zoom_image("IMG_0311.jpeg")

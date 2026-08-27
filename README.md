@@ -41,14 +41,17 @@ Introduction to `numpy`: manipulating multidimensional arrays and applying that 
 | ex02 | `load_image.py` | Loads an image with NumPy/PIL, prints its metadata (width, height, channels), zooms into the center, and displays it with axes |
 | ex03 | `load_image.py`, `rotate.py` | Loads an image and manually transposes/rotates the pixel matrix, then displays the result |
 
-<!-- 📷 Screenshot placeholder: original image loaded (ex02) -->
-![Original image](images/01_ex02_original.png)
+<table>
+  <tr>
+    <td><img src="01/ex02/IMG_0311.jpeg" width="300"/></td>
+    <td><img src="01/ex02/zoom_img.png" width="300"/></td>
+  </tr>
+  <tr>
+    <td align="center">Original</td>
+    <td align="center">Zoom</td>
+  </tr>
+</table>
 
-<!-- 📷 Screenshot placeholder: zoomed image with axis scales (ex02) -->
-![Zoomed image](images/01_ex02_zoom.png)
-
-<!-- 📷 Screenshot placeholder: transposed/rotated image (ex03) -->
-![Transposed image](images/01_ex03_rotated.png)
 
 ---
 

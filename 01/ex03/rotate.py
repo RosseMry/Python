@@ -23,7 +23,7 @@ def transpose_image(img: np.ndarray) -> np.ndarray:
 
 def main():
     # 1. Cargar y recortar la imagen usando el módulo previo
-    img = ft_load("animal.jpeg")
+    img = ft_load("../ex02/IMG_0311.jpeg")
     if img is None:
         return
         
@@ -39,6 +39,7 @@ def main():
     plt.axis("on")
     plt.title("Transposed Image")
     plt.show()
+    plt.savefig("mapache_grey.png")
 
 if __name__ == "__main__":
     main()
