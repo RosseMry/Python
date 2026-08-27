@@ -1,4 +1,4 @@
-# Python Piscine — Modules 00, 01, 02
+# Python for Data Science — Modules 00, 01, 02
 
 Exercises from the 42 Python Piscine (Piscine Python for Data Science), covering the first three modules: basic Python, NumPy (arrays & images), and Pandas/Matplotlib (dataframes & graphs).
 
