@@ -66,12 +66,6 @@ Introduction to `pandas` for loading and manipulating tabular data, and `matplot
 | ex02 | `aff_pop.py` | *(in progress)* — combine population data with life expectancy on the same graph |
 | ex03 | `projection_life.py` | *(in progress)* — relate data from two files to build a future projection |
 
-<!-- 📷 Screenshot placeholder: DataFrame shape / head output (ex00) -->
-![DataFrame preview](images/02_ex00_dataframe.png)
-
-<!-- 📷 Screenshot placeholder: life expectancy plot for a country (ex01) -->
-![Life expectancy plot](images/02_ex01_plot.png)
-
 ---
 
 ## ⚙️ Running the exercises
